@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres-db:
+    image: postgres:12-alpine
+    container_name: psql
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=user
+      - POSTGRES_DB=user_db
